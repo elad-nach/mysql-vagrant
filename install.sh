@@ -1,4 +1,5 @@
 #!/bin/bash
+export DEBIAN_FRONTEND=noninteractive
 sudo apt-get update
 sudo apt-get install -y vim curl python-software-properties
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
